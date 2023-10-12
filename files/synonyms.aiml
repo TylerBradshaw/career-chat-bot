@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+        <pattern>THANKS</pattern>
+        <template><srai>THANK YOU</srai></template>
+    </category>
+
+    <category>
+        <pattern>THANKS A LOT</pattern>
+        <template><srai>THANK YOU</srai></template>
+    </category>
+
+    <category>
+        <pattern>THANK YOU VERY MUCH</pattern>
+        <template><srai>THANK YOU</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HELLO</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HEY</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>GREETINGS</pattern>
+        <template><srai>HI</srai></template>
+    </category>
+    
+    <category>
+        <pattern>FAREWELL</pattern>
+        <template><srai>GOODBYE</srai></template>
+    </category>
+    
+    <category>
+        <pattern>BYE</pattern>
+        <template><srai>GOODBYE</srai></template>
+    </category>
+    
+    <category>
+        <pattern>LEAVE</pattern>
+        <template><srai>EXIT</srai></template>
+    </category>
+    
+    <category>
+        <pattern>QUIT</pattern>
+        <template><srai>EXIT</srai></template>
+    </category>
+    
+    <category>
+        <pattern>CLOSE</pattern>
+        <template><srai>EXIT</srai></template>
+    </category>
+
+
+</aiml>

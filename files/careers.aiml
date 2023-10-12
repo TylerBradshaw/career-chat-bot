@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>MOREINFOGRAPHICDESIGNER</pattern>
+	    <template>
+	        <think>
+                <set name="career">Graphic Designer</set>
+            </think>
+	        <delay>2</delay>
+	            Graphic design is a field that involves creating visual content for various media (such as websites, advertisements, product packaging, and more), utilizing elements like typography, 
+	            images, and colors to convey a specific message or create a particular effect. Designers in this field work to balance aesthetic appeal with functional design to effectively 
+	            communicate messages, drive engagement, and solve problems, often using various software and techniques to bring their creative visions to life.
+	           <delay>1</delay>
+	           What else would you like to know?
+        </template>
+    </category>
+        
+     
+    <category>
+	    <pattern>MOREINFODATASCIENTIST</pattern>
+	    <template>
+	        <think>
+                <set name="career">Data Scientist</set>
+            </think>
+	        <delay>2</delay>
+	            Data scientists utilize mathematical, statistical, and computational methods to analyze and interpret large datasets, extracting insights and knowledge to aid decision-making and 
+	            strategy development in various industries. They employ machine learning algorithms, data analysis, and predictive modeling to create data-driven solutions, often working with 
+	            big data technologies and tools to handle, visualize, and interpret data, ultimately aiming to provide actionable insights and support organizational objectives.
+	            <delay>1</delay>
+	            What else would you like to know?
+        </template>
+    </category>
+        
+    
+    <category>
+	    <pattern>MOREINFOSOFTWAREENGINEER</pattern>
+	    <template>
+	        <think>
+                <set name="career">Software Engineer</set>
+            </think>
+	        <delay>2</delay>
+	            Software engineers apply engineering principles to the entire software development process, from requirements gathering, system design, coding, testing, to maintenance, to develop 
+	            systematic and reliable software. They work in various domains and technologies, creating software solutions that meet client needs and specifications, ensuring functionality, 
+	            reliability, and optimal performance, often collaborating with other engineers, designers, and stakeholders to deliver high-quality software products and systems.
+	            <delay>1</delay>
+	            What else would you like to know?
+        </template>
+    </category>
+    
+    <category>
+	    <pattern>MOREINFOITSUPPORT</pattern>
+	    <template>
+	        <think>
+                <set name="career">IT Support</set>
+            </think>
+	        <delay>2</delay>
+	            IT support specialists assist users in resolving issues related to computer systems, hardware, software, and networks, ensuring that the technological aspects of an organization run 
+	            smoothly and efficiently. They provide technical assistance and support, troubleshoot problems, set up and configure hardware and software, maintain systems and networks, 
+	            and often play a pivotal role in ensuring the continuity of IT services, enabling organizations to function effectively.
+	            <delay>1</delay>
+	            What else would you like to know?
+        </template>
+    </category>
+    
+    <category>
+	    <pattern>MOREINFODIGITALMARKETING</pattern>
+	    <template>
+	        <think>
+                <set name="career">Digital Marketing</set>
+            </think>
+	        <delay>2</delay>
+	            Digital marketing specialists utilize various digital channels, such as social media, email, websites, and search engines, to promote brands, products, and services, aiming to enhance 
+	            visibility, drive traffic, and generate leads. Leveraging tools and analytics, they analyze and optimize campaigns, develop content, and strategize marketing initiatives, 
+	            aiming to engage target audiences, foster customer relationships, and achieve specific business objectives in the digital realm.
+	            <delay>1</delay>
+	            What else would you like to know?
+        </template>
+    </category>
+    
+    <category>
+        <pattern>_ PAY _</pattern>
+        <template>
+            <condition name="career" value="Graphic Designer">
+                Average base salary is $57,589, with a base range of $34,187 to $97,012. 
+            </condition>
+            <condition name="career" value="Data Scientist">
+                Average base salary is $124,515, with a base range of $82,039 to $188,985.
+            </condition>
+            <condition name="career" value="Software Engineer">
+                Average base salary is $117,298, with a base range of $73,635 to $186,852.
+            </condition>
+            <condition name="career" value="IT Support">
+                Average base salary is $50,653, with a base range of $32,345 to $79,326.
+            </condition>
+            <condition name="career" value="Digital Marketing">
+                Average base salary is $63,351, with a base range of $36,883 to $108,814.
+            </condition>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>_ PAY</pattern>
+        <template>
+            <condition name="career" value="Graphic Designer">
+                Average base salary is $57,589, with a base range of $34,187 to $97,012. 
+            </condition>
+            <condition name="career" value="Data Scientist">
+                Average base salary is $124,515, with a base range of $82,039 to $188,985.
+            </condition>
+            <condition name="career" value="Software Engineer">
+                Average base salary is $117,298, with a base range of $73,635 to $186,852.
+            </condition>
+            <condition name="career" value="IT Support">
+                Average base salary is $50,653, with a base range of $32,345 to $79,326.
+            </condition>
+            <condition name="career" value="Digital Marketing">
+                Average base salary is $63,351, with a base range of $36,883 to $108,814.
+            </condition>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>_ BEST COMPANIES _</pattern>
+        <template>
+            <condition name="career" value="Graphic Designer">
+                Best companies to work for as a graphic designer include Dexian, Google, Wyzant, and Williams Lea.
+            </condition>
+            <condition name="career" value="Data Scientist">
+                Best companies to work for as a data scientist include Apple, Capital One, Meta and LinkedIn.
+            </condition>
+            <condition name="career" value="Software Engineer">
+                Best companies to work for as a software engineer include Meta, Salesforce, Google and Apple.
+            </condition>
+            <condition name="career" value="IT Support">
+                Best companies to work for include CGI, Stefanini IT Solutions, Amazon and Devcare solutions.
+            </condition>
+            <condition name="career" value="Digital Marketing">
+                Best companies to work for include Dexian, The Reynolds and Reynolds Company, Gannett and One Firefly.
+            </condition>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>_ BEST COMPANIES</pattern>
+        <template>
+            <condition name="career" value="Graphic Designer">
+                Best companies to work for as a graphic designer include Dexian, Google, Wyzant, and Williams Lea.
+            </condition>
+            <condition name="career" value="Data Scientist">
+                Best companies to work for as a data scientist include Apple, Capital One, Meta and LinkedIn.
+            </condition>
+            <condition name="career" value="Software Engineer">
+                Best companies to work for as a software engineer include Meta, Salesforce, Google and Apple.
+            </condition>
+            <condition name="career" value="IT Support">
+                Best companies to work for include CGI, Stefanini IT Solutions, Amazon and Devcare solutions.
+            </condition>
+            <condition name="career" value="Digital Marketing">
+                Best companies to work for include Dexian, The Reynolds and Reynolds Company, Gannett and One Firefly.
+            </condition>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>_ JOB OUTLOOK _</pattern>
+        <template>
+            <condition name="career" value="Graphic Designer">
+                This career is expected to grow by 3% through 2032.
+            </condition>
+            <condition name="career" value="Data Scientist">
+                This career is expected to grow by 35% through 2032.
+            </condition>
+            <condition name="career" value="Software Engineer">
+                This career is expected to grow by 25% through 2032.
+            </condition>
+            <condition name="career" value="IT Support">
+                This career is expected to grow by 5% through 2032.
+            </condition>
+            <condition name="career" value="Digital Marketing">
+                This career is expected to grow by 6% through 2032.
+            </condition>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>_ JOB OUTLOOK</pattern>
+        <template>
+            <condition name="career" value="Graphic Designer">
+                This career is expected to grow by 3% through 2032.
+            </condition>
+            <condition name="career" value="Data Scientist">
+                This career is expected to grow by 35% through 2032.
+            </condition>
+            <condition name="career" value="Software Engineer">
+                This career is expected to grow by 25% through 2032.
+            </condition>
+            <condition name="career" value="IT Support">
+                This career is expected to grow by 5% through 2032.
+            </condition>
+            <condition name="career" value="Digital Marketing">
+                This career is expected to grow by 6% through 2032.
+            </condition>
+        </template>
+    </category>
+</aiml>

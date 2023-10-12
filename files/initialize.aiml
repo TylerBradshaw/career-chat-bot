@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>HI</pattern>
+	    <template>
+	        <random>
+	            <li><delay>1</delay>Hello. My name is Mentor Bot and I enjoy helping students choose a career. Would you like me to assist you or would you like to learn more about a specific career?
+	            <button>
+	                    <text>Begin Test</text>
+	                    <postback>BEGINTEST</postback>
+	                </button>
+	                <button>
+	                    <text>More Information</text>
+	                    <postback>MOREINFO</postback>
+	                </button></li>
+	            <li><delay>1</delay>Greetings! I'm Mentor Bot, your career guide. I love assisting students in career selection. How may I assist you today? Need advice or specific career information?
+	            <button>
+	                    <text>Begin Test</text>
+	                    <postback>BEGINTEST</postback>
+	                </button>
+	                <button>
+	                    <text>More Information</text>
+	                    <postback>MOREINFO</postback>
+	                </button></li>
+	            <li><delay>1</delay>Hi there! I'm Mentor Bot, passionate about guiding students toward their ideal career. Would you prefer direct assistance or details about a particular career path?
+	            <button>
+	                    <text>Begin Test</text>
+	                    <postback>BEGINTEST</postback>
+	                </button>
+	                <button>
+	                    <text>More Information</text>
+	                    <postback>MOREINFO</postback>
+	                </button></li>
+	            <li><delay>1</delay>Hello! Mentor Bot here, excited to guide students in their career journeys. Do you need personalized assistance, or are you interested in exploring a particular career?
+	            <button>
+	                    <text>Begin Test</text>
+	                    <postback>BEGINTEST</postback>
+	                </button>
+	                <button>
+	                    <text>More Information</text>
+	                    <postback>MOREINFO</postback>
+	                </button></li>
+	            <li><delay>1</delay>Hi! I'm Mentor Bot, specializing in aiding students with career choices. Would you like me to assist you directly, or would you like to delve into information about a specific career?
+	            <button>
+	                    <text>Begin Test</text>
+	                    <postback>BEGINTEST</postback>
+	                </button>
+	                <button>
+	                    <text>More Information</text>
+	                    <postback>MOREINFO</postback>
+	                </button></li>
+	        </random>
+	    </template>
+	</category>
+
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>
+            <random>
+                <li>
+                    <delay>1</delay>You're very welcome! I'm glad to assist you. What would you like to do next?
+                    <button>
+                        <text>Begin Test</text>
+                        <postback>BEGINTEST</postback>
+                    </button>
+                    <button>
+                        <text>More Information</text>
+                        <postback>MOREINFO</postback>
+                    </button>
+                </li>
+                <li>
+                    <delay>1</delay>I'm happy to help! Is there something else you'd like to know or do?
+                    <button>
+                        <text>Begin Test</text>
+                        <postback>BEGINTEST</postback>
+                    </button>
+                    <button>
+                        <text>More Information</text>
+                        <postback>MOREINFO</postback>
+                    </button>
+                </li>
+                <li>
+                    <delay>1</delay>It's my pleasure! How may I assist you further?
+                    <button>
+                        <text>Begin Test</text>
+                        <postback>BEGINTEST</postback>
+                    </button>
+                    <button>
+                        <text>More Information</text>
+                        <postback>MOREINFO</postback>
+                    </button>
+                </li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <random>
+                <li>I'm sorry, I didn't understand that. Can you please rephrase your question?</li>
+                <li>I'm afraid I don't understand. Can you try asking in a different way?</li>
+                <li>Sorry, I didn't get that. Can you please rephrase it?</li>
+                <li>I'm not sure what you're asking. Can you say it differently?</li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>GOODBYE</pattern>
+        <template>
+            Goodbye!
+        </template>
+    </category>
+    
+    <category>
+        <pattern>EXIT</pattern>
+        <template>
+            Farewell! Feel free to return whenever you need assistance.
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SEE YOU LATER</pattern>
+        <template>
+            See you later! Don't hesitate to reach out when you need help.
+        </template>
+    </category>egory>
+
+</aiml>
+

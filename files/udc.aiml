@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+	    <pattern>MOREINFO</pattern>
+	    <template>Which career would you like to know more about?
+    	    <button>
+                <text>Graphic Designer</text>
+                <postback>MOREINFOGRAPHICDESIGNER</postback>
+            </button>
+            <button>
+                <text>Data Scientist</text>
+                <postback>MOREINFODATASCIENTIST</postback>
+            </button>
+            <button>
+                <text>Software Engineer</text>
+                <postback>MOREINFOSOFTWAREENGINEER</postback>
+            </button>
+            <button>
+                <text>IT Support</text>
+                <postback>MOREINFOITSUPPORT</postback>
+            </button>
+            <button>
+                <text>Digital Marketing Specialist</text>
+                <postback>MOREINFODIGITALMARKETING</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+	    <pattern>BEGINTEST</pattern>
+	    <template>
+            <delay>1</delay>Great! Let's get started with a few basic questions...
+            <delay>2</delay>
+            Which of the following is a popular tool for digital art creation?
+            <button>
+                <text>Photoshop</text>
+                <postback>CORRECTDIGITALART</postback>
+            </button>
+            <button>
+                <text>Word</text>
+                <postback>INCORRECTDIGITALART</postback>
+            </button>
+            <button>
+                <text>Excel</text>
+                <postback>INCORRECTDIGITALART</postback>
+            </button>
+            <button>
+                <text>PowerPoint</text>
+                <postback>INCORRECTDIGITALART</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CORRECTDIGITALART</pattern>
+        <template>
+        <think>
+            <set name="digitalArt">correct</set>
+        </think>
+            <delay>2</delay>
+            Correct! Next question: Which programming language is primarily used for web front-end development?
+            <button>
+                <text>JavaScript</text>
+                <postback>CORRECTWEBDEV</postback>
+            </button>
+            <button>
+                <text>Python</text>
+                <postback>INCORRECTWEBDEV</postback>
+            </button>
+            <button>
+                <text>C#</text>
+                <postback>INCORRECTWEBDEV</postback>
+            </button>
+            <button>
+                <text>Java</text>
+                <postback>INCORRECTWEBDEV</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>INCORRECTDIGITALART</pattern>
+        <template>
+        <think>
+            <set name="digitalArt">incorrect</set>
+        </think>
+            <delay>2</delay>
+            Oops, that's not correct. The right answer is Photoshop. Let's move to the next question: Which programming language is primarily used for web front-end development?
+            <button>
+                <text>JavaScript</text>
+                <postback>CORRECTWEBDEV</postback>
+            </button>
+            <button>
+                <text>Python</text>
+                <postback>INCORRECTWEBDEV</postback>
+            </button>
+            <button>
+                <text>C#</text>
+                <postback>INCORRECTWEBDEV</postback>
+            </button>
+            <button>
+                <text>Java</text>
+                <postback>INCORRECTWEBDEV</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CORRECTWEBDEV</pattern>
+        <template>
+        <think>
+            <set name="webDev">correct</set>
+        </think>
+            <delay>2</delay>
+            Correct again! Next question: Which of the following is a characteristic of good user experience (UX) design?
+            <button>
+                <text>User-friendly</text>
+                <postback>CORRECTUX</postback>
+            </button>
+            <button>
+                <text>Confusing navigation</text>
+                <postback>INCORRECTUX</postback>
+            </button>
+            <button>
+                <text>Slow loading time</text>
+                <postback>INCORRECTUX</postback>
+            </button>
+            <button>
+                <text>Cluttered layout</text>
+                <postback>INCORRECTUX</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>INCORRECTWEBDEV</pattern>
+        <template>
+        <think>
+            <set name="webDev">incorrect</set>
+        </think>
+            <delay>2</delay>
+            That's not right. The correct answer is JavaScript. Let's try another question: Which of the following is a characteristic of good user experience (UX) design?
+            <button>
+                <text>User-friendly</text>
+                <postback>CORRECTUX</postback>
+            </button>
+            <button>
+                <text>Confusing navigation</text>
+                <postback>INCORRECTUX</postback>
+            </button>
+            <button>
+                <text>Slow loading time</text>
+                <postback>INCORRECTUX</postback>
+            </button>
+            <button>
+                <text>Cluttered layout</text>
+                <postback>INCORRECTUX</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CORRECTUX</pattern>
+        <template>
+        <think>
+            <set name="ux">correct</set>
+        </think>
+            <delay>2</delay>
+            You're on a roll! Next up: Which job role primarily involves working with databases?
+            <button>
+                <text>Data Analyst</text>
+                <postback>CORRECTDBROLE</postback>
+            </button>
+            <button>
+                <text>Network Engineer</text>
+                <postback>INCORRECTDBROLE</postback>
+            </button>
+            <button>
+                <text>Front-end Developer</text>
+                <postback>INCORRECTDBROLE</postback>
+            </button>
+            <button>
+                <text>Game Developer</text>
+                <postback>INCORRECTDBROLE</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>INCORRECTUX</pattern>
+        <template>
+        <think>
+            <set name="ux">incorrect</set>
+        </think>
+            <delay>2</delay>
+            Oops, that's incorrect. The right answer is User-friendly. Here's another question: Which job role primarily involves working with databases?
+            <button>
+                <text>Data Analyst</text>
+                <postback>CORRECTDBROLE</postback>
+            </button>
+            <button>
+                <text>Network Engineer</text>
+                <postback>INCORRECTDBROLE</postback>
+            </button>
+            <button>
+                <text>Front-end Developer</text>
+                <postback>INCORRECTDBROLE</postback>
+            </button>
+            <button>
+                <text>Game Developer</text>
+                <postback>INCORRECTDBROLE</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>CORRECTDBROLE</pattern>
+        <template>
+        <think>
+            <set name="dbRole">correct</set>
+        </think>
+            <delay>2</delay>
+            Well done! Next question: Which of the following is a popular framework for backend development?
+            <button>
+                <text>Node.js</text>
+                <postback>CORRECTBACKENDFRAMEWORK</postback>
+            </button>
+            <button>
+                <text>React.js</text>
+                <postback>INCORRECTBACKENDFRAMEWORK</postback>
+            </button>
+            <button>
+                <text>Bootstrap</text>
+                <postback>INCORRECTBACKENDFRAMEWORK</postback>
+            </button>
+            <button>
+                <text>Angular</text>
+                <postback>INCORRECTBACKENDFRAMEWORK</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>INCORRECTDBROLE</pattern>
+        <template>
+        <think>
+            <set name="dbRole">incorrect</set>
+        </think>
+            <delay>2</delay>
+            That's not the correct answer. The right answer is Data Analyst. Here's another question: Which of the following is a popular framework for backend development?
+            <button>
+                <text>Node.js</text>
+                <postback>CORRECTBACKENDFRAMEWORK</postback>
+            </button>
+            <button>
+                <text>React.js</text>
+                <postback>INCORRECTBACKENDFRAMEWORK</postback>
+            </button>
+            <button>
+                <text>Bootstrap</text>
+                <postback>INCORRECTBACKENDFRAMEWORK</postback>
+            </button>
+            <button>
+                <text>Angular</text>
+                <postback>INCORRECTBACKENDFRAMEWORK</postback>
+            </button>
+        </template>
+    </category>
+
+    
+    <category>
+        <pattern>CORRECTBACKENDFRAMEWORK</pattern>
+        <template>
+        <think>
+            <set name="backend">correct</set>
+        </think>
+            <delay>2</delay>
+            <srai>GETRECOMMENDEDCAREER</srai>
+            Excellent! You've done well on this quiz. Based on your answers, you might enjoy a career <get name="recommendedCareer"/>. Would you like more information on careers <get name="recommendedCareer"/>?
+            <button>
+                <text>Yes</text>
+                <postback>MOREINFO<get name="recommendedCareerShort"/></postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>END</postback>
+            </button>
+        </template>
+    </category>
+
+    <category>
+        <pattern>INCORRECTBACKENDFRAMEWORK</pattern>
+        <template>
+        <think>
+            <set name="backend">incorrect</set>
+        </think>
+            <delay>2</delay>
+            <think>
+                <srai>GETRECOMMENDEDCAREER</srai>
+            </think>
+            Oops, that's not right. The correct answer is Node.js. You've completed the quiz! Based on your answers, you might enjoy a career <get name="recommendedCareer"/>. Would you like more information on careers <get name="recommendedCareer"/>?
+            <button>
+                <text>Yes</text>
+                <postback>MOREINFO<get name="recommendedCareerShort"/></postback>
+            </button>
+            <button>
+                <text>No</text>
+                <postback>END</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>GETRECOMMENDEDCAREER</pattern>
+        <template>
+            <condition name="digitalArt" value="correct">
+                <condition name="webDev" value="correct">
+                    <condition name="ux" value="correct">
+                        <condition name="dbRole" value="correct">
+                            <condition name="backend" value="correct">
+                                <think>
+                                    <set name="recommendedCareer">in Software Engineering</set>
+                                    <set name="recommendedCareerShort">SOFTWAREENGINEER</set>
+                                </think>
+                            </condition>
+                            <condition name="backend" value="incorrect">
+                                <think>
+                                    <set name="recommendedCareer">as a Data Scientist</set>
+                                    <set name="recommendedCareerShort">DATASCIENTIST</set>
+                                </think>
+                            </condition>
+                        </condition>
+                    </condition>
+                </condition>
+                <condition name="webDev" value="incorrect">
+                    <think>
+                        <set name="recommendedCareer">as a Graphic Designer</set>
+                        <set name="recommendedCareerShort">GRAPHICDESIGNER</set>
+                    </think>
+                </condition>
+            </condition>
+            <condition name="digitalArt" value="incorrect">
+                <condition name="webDev" value="correct">
+                    <condition name="dbRole" value="correct">
+                        <think>
+                            <set name="recommendedCareer">in IT Support</set>
+                            <set name="recommendedCareerShort">ITSUPPORT</set>
+                        </think>
+                    </condition>
+                </condition>
+                <condition name="webDev" value="incorrect">
+                    <think>
+                        <set name="recommendedCareer">as a Digital Marketing Specialist</set>
+                        <set name="recommendedCareerShort">DIGITALMARKETING</set>
+                    </think>
+                </condition>
+            </condition>
+        </template>
+    </category>
+</aiml>
+
+
+
+
+
